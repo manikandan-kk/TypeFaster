@@ -1,6 +1,9 @@
 import './assets/main.css'
-
 import { createApp } from 'vue'
-import App from './App.vue'
+import App from './AppHome.vue'
+import { landingPageRouter } from './routes'
 
-createApp(App).mount('#app')
+const app = createApp(App)
+app.use(landingPageRouter);
+
+app.mount('#app');
