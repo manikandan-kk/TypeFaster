@@ -10,32 +10,32 @@ export const landingPageRouter = createRouter({
       component: TypeFastHome,
     },
     {
-      path: '/',
+      path: '/a',
       name: 'HomeB',
       component: TypeFastHome,
     },
     {
-      path: '/',
+      path: '/b',
       name: 'HomeC',
       component: TypeFastHome,
     },
     {
-      path: '/',
+      path: '/d',
       name: 'HomeD',
       component: TypeFastHome,
     },
     {
-      path: '/',
+      path: '/e',
       name: 'HomeE',
       component: TypeFastHome,
     },
     {
-      path: '/',
+      path: '/f',
       name: 'HomeF',
       component: TypeFastHome,
     },
     {
-      path: '/',
+      path: '/g',
       name: 'HomeG',
       component: TypeFastHome,
     },
