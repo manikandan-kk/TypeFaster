@@ -2,22 +2,24 @@
 import { onBeforeMount, onMounted, ref } from 'vue';
 import Navbar from '@/components/Navbar.vue';
 import { RouterView, useRouter } from 'vue-router';
-import { landingPageRouter }  from '@/routes'
+import { navigationRoutes }  from '@/routes'
   
   let tasks = ref([]);
-  let landingPageRoutes = ref([]);
+  let navRoutes = ref([]);
 
   onBeforeMount(() => {
     const router = useRouter();
-    landingPageRoutes.value = router.getRoutes();
+    navRoutes.value = navigationRoutes;
   });
 
   onMounted(() => {
-    
   });
+  
 </script>
 
 <template>
-  <Navbar :routes="landingPageRoutes" />
+  <Navbar 
+    :routes="navRoutes" 
+    header="Type Faster"/>
   <RouterView />
 </template>

@@ -1,45 +1,35 @@
 import { createRouter, createWebHistory } from 'vue-router';
 import TypeFastHome from '@/components/TypeFastHome.vue';
+import HighScores from '@/components/HighScores.vue';
+import TypingTest from '@/components/TypingTest.vue';
 
-export const landingPageRouter = createRouter({
+const navRoutes = [
+  {
+    path: '/home',
+    name: 'Home',
+    component: TypeFastHome,
+  },
+  {
+    path: '/high-scores',
+    name: 'High Scores',
+    component: HighScores,
+  }
+];
+
+const pushRoutes = [
+  {
+    path: '/typing-test',
+    name: 'TypingTest',
+    component: TypingTest,
+  }
+];
+
+const routerRoutes = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
-  routes: [
-    {
-      path: '/',
-      name: 'Home',
-      component: TypeFastHome,
-    },
-    {
-      path: '/a',
-      name: 'HomeB',
-      component: TypeFastHome,
-    },
-    {
-      path: '/b',
-      name: 'HomeC',
-      component: TypeFastHome,
-    },
-    {
-      path: '/d',
-      name: 'HomeD',
-      component: TypeFastHome,
-    },
-    {
-      path: '/e',
-      name: 'HomeE',
-      component: TypeFastHome,
-    },
-    {
-      path: '/f',
-      name: 'HomeF',
-      component: TypeFastHome,
-    },
-    {
-      path: '/g',
-      name: 'HomeG',
-      component: TypeFastHome,
-    },
-  ],
+  routes: [...navRoutes, ...pushRoutes]
 });
 
-export default [ landingPageRouter ];
+export const navigationRoutes = navRoutes;
+
+export default routerRoutes;
+
