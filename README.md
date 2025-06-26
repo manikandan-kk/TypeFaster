@@ -6,10 +6,10 @@
 
 <div class="preliminary-design">
     <h2> Preliminary Design </h2>
-    <div class="interaction-view">
+    <div class="pl-interaction-view">
         <p> Interaction view | HLD </p>
-        <div class="arch-view">
-            <img src = "./github-contents/imgs/preliminary_design.png" width="800" height="600">
+        <div class="pl-interaction-view-design">
+            <img src = "./github-contents/imgs/preliminary_hld.png" width="800" height="600">
         </div>
         <div class="components-desc">
             <h3>Components Involved</h3>
@@ -75,6 +75,12 @@
                     </p>
                 </li>
             </ul>
+        </div>
+    </div>
+    <div class="pl-erd-view">
+        <p> ERD Relationship view | LLD </p>
+        <div class="pl-erd-view-design">
+            <img src = "./github-contents/imgs/preliminary_erd.png" width="600" height="300">
         </div>
     </div>
 </div>
