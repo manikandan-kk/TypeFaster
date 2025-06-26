@@ -54,6 +54,26 @@
                         </ol>
                     </p>
                 </li>
+                <li>
+                    <h3>DynamoDB</h3>
+                    <p>
+                        Type: Serverless Storage
+                    </p>
+                    <p>
+                        Usage Pattern:
+                        <ol>
+                            <li>
+                                Need for serverless storage since it's a low-scale app (and no requirement to manage the storage layer). Also there is no requirement for Autoscale though DynamoDB can handle the same.
+                            </li>
+                            <li>
+                                DynamoDB offers Always free-tier (for 25 RCU,WCU / second) which is Safe to user rather than setting infra layer. Hence this will be highly cost-bounded.
+                            </li>
+                            <li>
+                                Although Typewriter data has relationships involved (primary RDBMS use-case), it can be perfectly normal to model in NoSQL world (trade-off for using Always free tier DynamoDB).
+                            </li>
+                        </ol>
+                    </p>
+                </li>
             </ul>
         </div>
     </div>
