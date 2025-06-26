@@ -34,6 +34,26 @@
                         </ol>
                     </p>
                 </li>
+                <li>
+                    <h3>Lambda</h3>
+                    <p>
+                        Type: Serverless Compute
+                    </p>
+                    <p>
+                        Usage Pattern:
+                        <ol>
+                            <li>
+                                Need for serverless compute since it's a low-scale app (and no requirement to run compute layer - 24 x 7). Also there is no requirement for Autoscale though Lambda can handle the same.
+                            </li>
+                            <li>
+                                Lambda offers Always free-tier (for 1st 1 million requests / month) which is Safe to user rather using compute services like EC2. Hence this will be highly cost-bounded.
+                            </li>
+                            <li>
+                                No need to manage the Infra since AWS runs the provided execution very quickly over the pre-warm nodes (managed internally)
+                            </li>
+                        </ol>
+                    </p>
+                </li>
             </ul>
         </div>
     </div>
